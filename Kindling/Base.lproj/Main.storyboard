@@ -41,15 +41,37 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5a-vz-Pb4">
+                                <rect key="frame" x="225" y="218" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxO-hC-zpw">
+                                <rect key="frame" x="199" y="226" width="203" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="4T9-Xs-ViN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="yu5-Os-K6L" firstAttribute="width" secondItem="sKW-GI-mES" secondAttribute="width" constant="-90" id="3JS-v8-0jJ"/>
                             <constraint firstItem="sKW-GI-mES" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="5Sf-Ca-KqQ"/>
+                            <constraint firstItem="D5a-vz-Pb4" firstAttribute="leading" secondItem="sKW-GI-mES" secondAttribute="leading" constant="45" id="Agf-dJ-EPn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MxO-hC-zpw" secondAttribute="bottom" constant="324" id="CdU-s1-AWD"/>
+                            <constraint firstItem="MxO-hC-zpw" firstAttribute="top" secondItem="D5a-vz-Pb4" secondAttribute="bottom" constant="-13" id="JCZ-N3-usC"/>
+                            <constraint firstItem="MxO-hC-zpw" firstAttribute="top" secondItem="yu5-Os-K6L" secondAttribute="bottom" constant="16" id="LPD-0b-Kqg"/>
                             <constraint firstItem="yu5-Os-K6L" firstAttribute="centerY" secondItem="sKW-GI-mES" secondAttribute="centerY" constant="-39" id="RbR-PY-dKe"/>
+                            <constraint firstItem="D5a-vz-Pb4" firstAttribute="top" secondItem="sKW-GI-mES" secondAttribute="bottom" constant="-90" id="Rio-Gn-rn4"/>
+                            <constraint firstItem="MxO-hC-zpw" firstAttribute="centerX" secondItem="D5a-vz-Pb4" secondAttribute="centerX" id="XZx-OO-hFB"/>
                             <constraint firstItem="yu5-Os-K6L" firstAttribute="leading" secondItem="sKW-GI-mES" secondAttribute="trailing" constant="-195" id="hnB-uU-kox"/>
                             <constraint firstAttribute="centerX" secondItem="sKW-GI-mES" secondAttribute="centerX" id="leN-ee-keX"/>
                             <constraint firstItem="yu5-Os-K6L" firstAttribute="height" secondItem="sKW-GI-mES" secondAttribute="height" constant="-118" id="tjg-eX-JDR"/>
+                            <constraint firstItem="D5a-vz-Pb4" firstAttribute="trailing" secondItem="sKW-GI-mES" secondAttribute="trailing" constant="-45" id="zRE-cK-MvA"/>
                         </constraints>
                     </view>
                     <connections>
