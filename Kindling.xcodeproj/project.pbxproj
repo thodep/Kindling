@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D15AEB901B8B9A16005C7A0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AEB8F1B8B9A16005C7A0E /* AppDelegate.swift */; };
+		D15AEB951B8B9A16005C7A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15AEB931B8B9A16005C7A0E /* Main.storyboard */; };
+		D15AEB971B8B9A16005C7A0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D15AEB961B8B9A16005C7A0E /* Images.xcassets */; };
+		D15AEB9A1B8B9A16005C7A0E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D15AEB981B8B9A16005C7A0E /* LaunchScreen.xib */; };
+		D15AEBA61B8B9A16005C7A0E /* KindlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AEBA51B8B9A16005C7A0E /* KindlingTests.swift */; };
+		D15AEBB11B8B9BB2005C7A0E /* RootPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AEBB01B8B9BB2005C7A0E /* RootPresentationViewController.swift */; };
+		D15AEBB31B8BA000005C7A0E /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AEBB21B8BA000005C7A0E /* CardViewController.swift */; };
+		D15AEBB71B8BA7A8005C7A0E /* LayerOfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AEBB61B8BA7A8005C7A0E /* LayerOfView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D15AEBA01B8B9A16005C7A0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D15AEB821B8B9A16005C7A0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D15AEB891B8B9A16005C7A0E;
+			remoteInfo = Kindling;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D15AEB8A1B8B9A16005C7A0E /* Kindling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kindling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D15AEB8E1B8B9A16005C7A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D15AEB8F1B8B9A16005C7A0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D15AEB941B8B9A16005C7A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D15AEB961B8B9A16005C7A0E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D15AEB991B8B9A16005C7A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D15AEB9F1B8B9A16005C7A0E /* KindlingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KindlingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D15AEBA41B8B9A16005C7A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D15AEBA51B8B9A16005C7A0E /* KindlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindlingTests.swift; sourceTree = "<group>"; };
+		D15AEBB01B8B9BB2005C7A0E /* RootPresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPresentationViewController.swift; sourceTree = "<group>"; };
+		D15AEBB21B8BA000005C7A0E /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		D15AEBB61B8BA7A8005C7A0E /* LayerOfView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerOfView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D15AEB871B8B9A16005C7A0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D15AEB9C1B8B9A16005C7A0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D15AEB811B8B9A16005C7A0E = {
+			isa = PBXGroup;
+			children = (
+				D15AEB8C1B8B9A16005C7A0E /* Kindling */,
+				D15AEBA21B8B9A16005C7A0E /* KindlingTests */,
+				D15AEB8B1B8B9A16005C7A0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D15AEB8B1B8B9A16005C7A0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D15AEB8A1B8B9A16005C7A0E /* Kindling.app */,
+				D15AEB9F1B8B9A16005C7A0E /* KindlingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D15AEB8C1B8B9A16005C7A0E /* Kindling */ = {
+			isa = PBXGroup;
+			children = (
+				D15AEBAF1B8B9B59005C7A0E /* ViewControllers */,
+				D15AEB8F1B8B9A16005C7A0E /* AppDelegate.swift */,
+				D15AEB931B8B9A16005C7A0E /* Main.storyboard */,
+				D15AEB961B8B9A16005C7A0E /* Images.xcassets */,
+				D15AEB981B8B9A16005C7A0E /* LaunchScreen.xib */,
+				D15AEB8D1B8B9A16005C7A0E /* Supporting Files */,
+			);
+			path = Kindling;
+			sourceTree = "<group>";
+		};
+		D15AEB8D1B8B9A16005C7A0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D15AEB8E1B8B9A16005C7A0E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D15AEBA21B8B9A16005C7A0E /* KindlingTests */ = {
+			isa = PBXGroup;
+			children = (
+				D15AEBA51B8B9A16005C7A0E /* KindlingTests.swift */,
+				D15AEBA31B8B9A16005C7A0E /* Supporting Files */,
+			);
+			path = KindlingTests;
+			sourceTree = "<group>";
+		};
+		D15AEBA31B8B9A16005C7A0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D15AEBA41B8B9A16005C7A0E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D15AEBAF1B8B9B59005C7A0E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D15AEBB01B8B9BB2005C7A0E /* RootPresentationViewController.swift */,
+				D15AEBB21B8BA000005C7A0E /* CardViewController.swift */,
+				D15AEBB61B8BA7A8005C7A0E /* LayerOfView.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D15AEB891B8B9A16005C7A0E /* Kindling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D15AEBA91B8B9A16005C7A0E /* Build configuration list for PBXNativeTarget "Kindling" */;
+			buildPhases = (
+				D15AEB861B8B9A16005C7A0E /* Sources */,
+				D15AEB871B8B9A16005C7A0E /* Frameworks */,
+				D15AEB881B8B9A16005C7A0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kindling;
+			productName = Kindling;
+			productReference = D15AEB8A1B8B9A16005C7A0E /* Kindling.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D15AEB9E1B8B9A16005C7A0E /* KindlingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D15AEBAC1B8B9A16005C7A0E /* Build configuration list for PBXNativeTarget "KindlingTests" */;
+			buildPhases = (
+				D15AEB9B1B8B9A16005C7A0E /* Sources */,
+				D15AEB9C1B8B9A16005C7A0E /* Frameworks */,
+				D15AEB9D1B8B9A16005C7A0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D15AEBA11B8B9A16005C7A0E /* PBXTargetDependency */,
+			);
+			name = KindlingTests;
+			productName = KindlingTests;
+			productReference = D15AEB9F1B8B9A16005C7A0E /* KindlingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D15AEB821B8B9A16005C7A0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Tho Dang";
+				TargetAttributes = {
+					D15AEB891B8B9A16005C7A0E = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					D15AEB9E1B8B9A16005C7A0E = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = D15AEB891B8B9A16005C7A0E;
+					};
+				};
+			};
+			buildConfigurationList = D15AEB851B8B9A16005C7A0E /* Build configuration list for PBXProject "Kindling" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D15AEB811B8B9A16005C7A0E;
+			productRefGroup = D15AEB8B1B8B9A16005C7A0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D15AEB891B8B9A16005C7A0E /* Kindling */,
+				D15AEB9E1B8B9A16005C7A0E /* KindlingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D15AEB881B8B9A16005C7A0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D15AEB951B8B9A16005C7A0E /* Main.storyboard in Resources */,
+				D15AEB9A1B8B9A16005C7A0E /* LaunchScreen.xib in Resources */,
+				D15AEB971B8B9A16005C7A0E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D15AEB9D1B8B9A16005C7A0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D15AEB861B8B9A16005C7A0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D15AEBB11B8B9BB2005C7A0E /* RootPresentationViewController.swift in Sources */,
+				D15AEBB71B8BA7A8005C7A0E /* LayerOfView.swift in Sources */,
+				D15AEB901B8B9A16005C7A0E /* AppDelegate.swift in Sources */,
+				D15AEBB31B8BA000005C7A0E /* CardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D15AEB9B1B8B9A16005C7A0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D15AEBA61B8B9A16005C7A0E /* KindlingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D15AEBA11B8B9A16005C7A0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D15AEB891B8B9A16005C7A0E /* Kindling */;
+			targetProxy = D15AEBA01B8B9A16005C7A0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D15AEB931B8B9A16005C7A0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D15AEB941B8B9A16005C7A0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D15AEB981B8B9A16005C7A0E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D15AEB991B8B9A16005C7A0E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D15AEBA71B8B9A16005C7A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D15AEBA81B8B9A16005C7A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D15AEBAA1B8B9A16005C7A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Kindling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D15AEBAB1B8B9A16005C7A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Kindling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D15AEBAD1B8B9A16005C7A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KindlingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kindling.app/Kindling";
+			};
+			name = Debug;
+		};
+		D15AEBAE1B8B9A16005C7A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KindlingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kindling.app/Kindling";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D15AEB851B8B9A16005C7A0E /* Build configuration list for PBXProject "Kindling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D15AEBA71B8B9A16005C7A0E /* Debug */,
+				D15AEBA81B8B9A16005C7A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D15AEBA91B8B9A16005C7A0E /* Build configuration list for PBXNativeTarget "Kindling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D15AEBAA1B8B9A16005C7A0E /* Debug */,
+				D15AEBAB1B8B9A16005C7A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D15AEBAC1B8B9A16005C7A0E /* Build configuration list for PBXNativeTarget "KindlingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D15AEBAD1B8B9A16005C7A0E /* Debug */,
+				D15AEBAE1B8B9A16005C7A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D15AEB821B8B9A16005C7A0E /* Project object */;
+}

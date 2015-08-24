@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Root Presentation View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RootPresentationViewController" customModule="Kindling" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKW-GI-mES">
+                                <rect key="frame" x="180" y="40" width="240" height="268"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="N2b-eR-wX6"/>
+                                    <constraint firstAttribute="height" constant="268" id="PMs-gA-a15"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="VnM-di-RZR" kind="embed" id="X0y-HN-EAY"/>
+                                </connections>
+                            </containerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="yu5-Os-K6L" customClass="LayerOfView" customModule="Kindling" customModuleProvider="target">
+                                <rect key="frame" x="225" y="60" width="150" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.1294117719" green="0.7254902124" blue="0.97254908080000002" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yu5-Os-K6L" firstAttribute="width" secondItem="sKW-GI-mES" secondAttribute="width" constant="-90" id="3JS-v8-0jJ"/>
+                            <constraint firstItem="sKW-GI-mES" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="5Sf-Ca-KqQ"/>
+                            <constraint firstItem="yu5-Os-K6L" firstAttribute="centerY" secondItem="sKW-GI-mES" secondAttribute="centerY" constant="-39" id="RbR-PY-dKe"/>
+                            <constraint firstItem="yu5-Os-K6L" firstAttribute="leading" secondItem="sKW-GI-mES" secondAttribute="trailing" constant="-195" id="hnB-uU-kox"/>
+                            <constraint firstAttribute="centerX" secondItem="sKW-GI-mES" secondAttribute="centerX" id="leN-ee-keX"/>
+                            <constraint firstItem="yu5-Os-K6L" firstAttribute="height" secondItem="sKW-GI-mES" secondAttribute="height" constant="-118" id="tjg-eX-JDR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="yu5-Os-K6L" id="gBS-tD-vDy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Card View Controller-->
+        <scene sceneID="AUH-K5-Yem">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="VnM-di-RZR" customClass="CardViewController" customModule="Kindling" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9PW-PR-OZq"/>
+                        <viewControllerLayoutGuide type="bottom" id="rwA-eO-qyU"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ulK-a4-YRu">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="268"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9l1-gO-mfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240" y="970"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="3" width="512" height="512"/>
+    </resources>
+</document>
