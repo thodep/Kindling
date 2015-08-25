@@ -10,17 +10,26 @@ import UIKit
 
 class CardViewController: UIViewController {
 
+    @IBOutlet weak var cardImageView: LayerOfView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        cardImageView.layer.cornerRadius = (cardImageView.layer.bounds.size.width + cardImageView.layer.bounds.height) / 4
+        cardImageView.clipsToBounds = true
+    }
     
+
 
     /*
     // MARK: - Navigation

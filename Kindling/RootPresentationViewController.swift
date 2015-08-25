@@ -24,14 +24,7 @@ class RootPresentationViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        imageView.layer.cornerRadius = (imageView.layer.bounds.size.width + imageView.layer.bounds.height) / 4
-        imageView.clipsToBounds = true
-        
-    }
-
+   
     /*
     // MARK: - Navigation
 
