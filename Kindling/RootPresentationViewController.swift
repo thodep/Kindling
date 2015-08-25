@@ -9,9 +9,9 @@
 import UIKit
 
 class RootPresentationViewController: UIViewController {
-
-    @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var horizontalContraint: NSLayoutConstraint!
+    @IBOutlet weak var cardContainer: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,5 +34,7 @@ class RootPresentationViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+    
 
 }

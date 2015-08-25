@@ -14,7 +14,8 @@ class CardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        cardImageView.layer.cornerRadius = (cardImageView.layer.bounds.size.width + cardImageView.layer.bounds.height) / 4
+        cardImageView.clipsToBounds = true
         // Do any additional setup after loading the view.
     
     }
@@ -25,9 +26,31 @@ class CardViewController: UIViewController {
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        cardImageView.layer.cornerRadius = (cardImageView.layer.bounds.size.width + cardImageView.layer.bounds.height) / 4
-        cardImageView.clipsToBounds = true
+      
     }
+    
+    @IBAction func handlePan(sender: UIPanGestureRecognizer) {
+        
+        let translation = sender.translationInView(self.view)
+        if let view = sender.view {
+            view.center = CGPoint(x:view.center.x + translation.x,
+                y:view.center.y + translation.y)
+        }
+        sender.setTranslation(CGPointZero, inView: self.view)
+        print("Donald Duck")
+        
+        if sender.state == UIGestureRecognizerState.Began {
+        print("began")
+        }
+        if sender.state == UIGestureRecognizerState.Ended {
+        print("ended")
+        }
+    }
+    
+  //  @IBAction func handlePan(recognizer:UIPanGestureRecognizer) {
+   //     print("swipe")
+        
+        
     
 
 
