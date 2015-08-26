@@ -39,11 +39,20 @@ class CardViewController: UIViewController {
         sender.setTranslation(CGPointZero, inView: self.view)
         print("Donald Duck")
         
-        if sender.state == UIGestureRecognizerState.Began {
-        print("began")
-        }
-        if sender.state == UIGestureRecognizerState.Ended {
-        print("ended")
+//        if sender.state == UIGestureRecognizerState.Began {
+//        print("began")
+//        }
+//        else if sender.state == UIGestureRecognizerState.Ended {
+//        print("ended")
+//        }
+        // interesting 
+        switch sender.state {
+        case UIGestureRecognizerState.Began:
+            print("start")
+        case UIGestureRecognizerState.Ended:
+            print("ended")
+        default:
+            print("nothing")
         }
     }
     
