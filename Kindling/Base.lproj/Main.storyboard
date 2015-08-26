@@ -23,6 +23,11 @@
                                     <constraint firstAttribute="height" constant="268" id="ljb-vv-Dl4"/>
                                     <constraint firstAttribute="width" constant="240" id="qlM-Mt-542"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="VnM-di-RZR" kind="embed" id="X0y-HN-EAY"/>
                                 </connections>
@@ -98,12 +103,10 @@
                                         <color key="value" red="0.1294117719" green="0.7254902124" blue="0.97254908080000002" alpha="1" colorSpace="deviceRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Z8m-a4-hP1" appends="YES" id="ETc-cv-QLb"/>
-                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="D5a-vz-Pb4" secondAttribute="trailing" constant="30" id="6pN-1E-R9N"/>
                             <constraint firstItem="D5a-vz-Pb4" firstAttribute="top" secondItem="yu5-Os-K6L" secondAttribute="bottom" constant="8" id="FHa-XY-Ffv"/>
@@ -115,16 +118,19 @@
                             <constraint firstItem="MxO-hC-zpw" firstAttribute="top" secondItem="D5a-vz-Pb4" secondAttribute="bottom" constant="-12.5" id="dlh-Pp-3yi"/>
                             <constraint firstItem="yu5-Os-K6L" firstAttribute="top" secondItem="9PW-PR-OZq" secondAttribute="bottom" constant="20" id="zZV-No-ZPx"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="jx2-dp-lpG" appends="YES" id="Ids-Nl-w9Z"/>
+                        </connections>
                     </view>
                     <toolbarItems/>
                     <connections>
-                        <outlet property="cardImageView" destination="yu5-Os-K6L" id="U4O-cO-Mgb"/>
+                        <outlet property="cardImageView" destination="yu5-Os-K6L" id="iZK-Je-BuI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9l1-gO-mfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="Z8m-a4-hP1">
+                <panGestureRecognizer minimumNumberOfTouches="1" id="jx2-dp-lpG">
                     <connections>
-                        <action selector="handlePan:" destination="VnM-di-RZR" id="do2-Wz-J4P"/>
+                        <action selector="didPan:" destination="VnM-di-RZR" id="sKT-QH-Jok"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>

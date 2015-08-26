@@ -10,6 +10,8 @@ import UIKit
 
 class CardViewController: UIViewController {
 
+   // @IBOutlet weak var cardImageView: LayerOfView!
+    
     @IBOutlet weak var cardImageView: LayerOfView!
     
     override func viewDidLoad() {
@@ -29,48 +31,38 @@ class CardViewController: UIViewController {
       
     }
     
-    @IBAction func handlePan(sender: UIPanGestureRecognizer) {
-        
+    @IBAction func didPan(sender: UIPanGestureRecognizer) {
+    
         let translation = sender.translationInView(self.view)
         if let view = sender.view {
             view.center = CGPoint(x:view.center.x + translation.x,
                 y:view.center.y + translation.y)
         }
         sender.setTranslation(CGPointZero, inView: self.view)
-        print("Donald Duck")
+        print("Let ")
         
-//        if sender.state == UIGestureRecognizerState.Began {
-//        print("began")
-//        }
-//        else if sender.state == UIGestureRecognizerState.Ended {
-//        print("ended")
-//        }
-        // interesting 
-        switch sender.state {
-        case UIGestureRecognizerState.Began:
-            print("start")
-        case UIGestureRecognizerState.Ended:
-            print("ended")
-        default:
-            print("nothing")
+        
+        // Set UIGesture States
+        if sender.state == UIGestureRecognizerState.Began {
+        print("began")
         }
-    }
-    
-  //  @IBAction func handlePan(recognizer:UIPanGestureRecognizer) {
-   //     print("swipe")
+        else if sender.state == UIGestureRecognizerState.Ended {
+        print("ended")
+        } else {
+            print(" user stopped panning")
+        }
         
         
-    
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        // interesting case of using Switch
+//        switch sender.state {
+//        case UIGestureRecognizerState.Began:
+//            print("start")
+//        case UIGestureRecognizerState.Ended:
+//            print("ended")
+//        default:
+//            print("nothing")
+//        }
     }
-    */
-
+    
+ 
 }
