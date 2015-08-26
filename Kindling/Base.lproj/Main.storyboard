@@ -23,11 +23,6 @@
                                     <constraint firstAttribute="height" constant="268" id="ljb-vv-Dl4"/>
                                     <constraint firstAttribute="width" constant="240" id="qlM-Mt-542"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="VnM-di-RZR" kind="embed" id="X0y-HN-EAY"/>
                                 </connections>

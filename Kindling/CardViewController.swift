@@ -41,13 +41,18 @@ class CardViewController: UIViewController {
         sender.setTranslation(CGPointZero, inView: self.view)
         print("Let ")
         
+        // Do we need these codes
+        var transV = sender.translationInView(view)
+        print("All is well. X: \(transV)")
         
         // Set UIGesture States
         if sender.state == UIGestureRecognizerState.Began {
         print("began")
         }
         else if sender.state == UIGestureRecognizerState.Ended {
+              view.center = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height / 2)
         print("ended")
+          
         } else {
             print(" user stopped panning")
         }
