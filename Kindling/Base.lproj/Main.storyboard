@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKW-GI-mES">
-                                <rect key="frame" x="180" y="40" width="240" height="268"/>
+                                <rect key="frame" x="180" y="50" width="240" height="268"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="268" id="ljb-vv-Dl4"/>
                                     <constraint firstAttribute="width" constant="240" id="qlM-Mt-542"/>
@@ -27,29 +27,29 @@
                                     <segue destination="VnM-di-RZR" kind="embed" id="X0y-HN-EAY"/>
                                 </connections>
                             </containerView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bMY-pZ-GB3">
-                                <rect key="frame" x="276" y="324" width="51" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="49" id="YTa-k9-4dX"/>
-                                    <constraint firstAttribute="height" constant="31" id="wEr-HR-zni"/>
-                                </constraints>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="bMY-pZ-GB3" firstAttribute="top" secondItem="sKW-GI-mES" secondAttribute="bottom" constant="16" id="Daa-4k-6LD"/>
                             <constraint firstAttribute="centerX" secondItem="sKW-GI-mES" secondAttribute="centerX" id="OwK-iy-Ao8"/>
-                            <constraint firstItem="sKW-GI-mES" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="SfV-a4-iIT"/>
-                            <constraint firstAttribute="centerX" secondItem="bMY-pZ-GB3" secondAttribute="centerX" constant="-0.5" id="UMI-4t-9BN"/>
+                            <constraint firstItem="sKW-GI-mES" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="SfV-a4-iIT"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="cfI-QW-K9n" appends="YES" id="Rwt-qW-Zqt"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="cardContainer" destination="sKW-GI-mES" id="dnu-qi-xs9"/>
+                        <outlet property="cardTopLayoutConstraint" destination="SfV-a4-iIT" id="W2p-cd-P6W"/>
                         <outlet property="horizontalContraint" destination="OwK-iy-Ao8" id="v3H-8T-blA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="cfI-QW-K9n">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="z0z-86-FdV"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
         </scene>
         <!--Card View Controller-->
@@ -113,9 +113,6 @@
                             <constraint firstItem="MxO-hC-zpw" firstAttribute="top" secondItem="D5a-vz-Pb4" secondAttribute="bottom" constant="-12.5" id="dlh-Pp-3yi"/>
                             <constraint firstItem="yu5-Os-K6L" firstAttribute="top" secondItem="9PW-PR-OZq" secondAttribute="bottom" constant="20" id="zZV-No-ZPx"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="jx2-dp-lpG" appends="YES" id="Ids-Nl-w9Z"/>
-                        </connections>
                     </view>
                     <toolbarItems/>
                     <connections>
@@ -123,11 +120,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9l1-gO-mfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="jx2-dp-lpG">
-                    <connections>
-                        <action selector="didPan:" destination="VnM-di-RZR" id="sKT-QH-Jok"/>
-                    </connections>
-                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="285" y="940"/>
         </scene>
