@@ -16,9 +16,9 @@ class RootPresentationViewController: UIViewController {
     
     enum SelectionState {
         
-        case NoSelection
-        case LikeSelection
-        case DislikeSelection
+        case NoSelection      // 0
+        case LikeSelection    // 1
+        case DislikeSelection // 2
         
     }
     var currentState = SelectionState.NoSelection
@@ -28,6 +28,7 @@ class RootPresentationViewController: UIViewController {
         
       
         super.viewDidLoad()
+        print(currentState.hashValue)
         
         //Adding Selection States
        
@@ -49,15 +50,15 @@ class RootPresentationViewController: UIViewController {
     */
 
     @IBAction func handlePan(sender: UIPanGestureRecognizer) {
+        
         switch sender.state {
+            
         case UIGestureRecognizerState.Began:
             println("began")
           
         case UIGestureRecognizerState.Ended:
-            println("eND")
-           
-            
-
+            //println("eND")
+            //add an animation to the .Ended call block which animates the view back to a  centred position once the dragging event ends
             UIView.animateWithDuration(0.3, animations: { () -> Void in
                 
                 self.horizontalContraint.constant = 0
@@ -73,17 +74,28 @@ class RootPresentationViewController: UIViewController {
             let translation = sender.translationInView(self.cardContainer)
             horizontalContraint.constant =  -translation.x
             cardContainer.layoutIfNeeded()
-            
-            
-            
+        
             // Checking Card Location
             var transV = sender.translationInView(view)
             print("Card locates at \(transV)")
+            // If user drag the card to the left
+            if transV.x < 0{
+            println("dislike")
+            currentState = SelectionState.DislikeSelection
+            print(currentState.hashValue)
+              
+            // If user drag the card to the right
+            } else if transV.x > 0 {
+             println("like")
+            currentState = SelectionState.LikeSelection
+            print(currentState.hashValue)
+             // if no one touch the card 
+            } else {
+            println("card stays at the center")
+                
+            }
             
-         // When the user drag the card to the left
-        // translation.x = SelectionState.DislikeSelection
-            
-            
+            print(currentState.hashValue)
             
         case UIGestureRecognizerState.Failed:
             println("OPPS ERROR")
