@@ -14,21 +14,23 @@ class RootPresentationViewController: UIViewController {
     @IBOutlet weak var cardContainer: UIView!
     @IBOutlet weak var cardTopLayoutConstraint: NSLayoutConstraint!
     
+    enum SelectionState {
+        
+        case NoSelection
+        case LikeSelection
+        case DislikeSelection
+        
+    }
+    var currentState = SelectionState.NoSelection
+   
+    
     override func viewDidLoad() {
         
       
         super.viewDidLoad()
         
         //Adding Selection States
-        enum SelectionState {
-        
-        case NoSelection
-        case LikeSelection
-        case DislikeSelection
-        
-        }
-        var currentState = SelectionState.NoSelection
-        print("\(currentState )")
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,24 +55,41 @@ class RootPresentationViewController: UIViewController {
           
         case UIGestureRecognizerState.Ended:
             println("eND")
-            horizontalContraint.constant = 0.0
-            cardContainer.layoutIfNeeded()
+           
             
+
+            UIView.animateWithDuration(0.3, animations: { () -> Void in
+                
+                self.horizontalContraint.constant = 0
+                self.view.layoutIfNeeded()
+                
+            }, completion: {
+               (complete) -> Void in
+                
+            })
+            
+    
         case UIGestureRecognizerState.Changed:
             let translation = sender.translationInView(self.cardContainer)
-//            var curveOffset:CGFloat = cos(translation.x / (0.5 * self.view.bounds.width))
-//            println("The current curve offest = \(curveOffset)")
-//            cardTopLayoutConstraint.constant = (-curveOffset * 30)
             horizontalContraint.constant =  -translation.x
             cardContainer.layoutIfNeeded()
-
+            
+            
+            
+            // Checking Card Location
+            var transV = sender.translationInView(view)
+            print("Card locates at \(transV)")
+            
+         // When the user drag the card to the left
+        // translation.x = SelectionState.DislikeSelection
+            
+            
+            
         case UIGestureRecognizerState.Failed:
             println("OPPS ERROR")
             
         default:
             print("Default callback triggered")
-            
-
             
         }
 
