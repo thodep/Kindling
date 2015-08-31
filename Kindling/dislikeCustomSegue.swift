@@ -4,7 +4,7 @@
 //
 //  Created by tho dang on 2015-08-28.
 //  Copyright (c) 2015 Tho Dang. All rights reserved.
-//
+// Create this class to move the dislike View Controller from left to right 
 
 import UIKit
 

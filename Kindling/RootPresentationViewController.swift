@@ -52,6 +52,7 @@ class RootPresentationViewController: UIViewController {
     return back to previous view controller
     */
     @IBAction func unwindToPreviousCotnroller(segue:UIStoryboardSegue) {
+       // card will stay at the center when user click on Go Back Button 
         self.horizontalContraint.constant = 0
         print("return back")
     }
@@ -87,16 +88,16 @@ class RootPresentationViewController: UIViewController {
             // If user drag the card to the left
             if transV.x < 0{
                 println("dislike")
-                var dislikeState = SelectionState.DislikeSelection
+                var currentState = SelectionState.DislikeSelection
                 performSegueWithIdentifier("dislikeSegue", sender: self)
-                print(dislikeState.hashValue)
+                print(currentState.hashValue)
               
             // If user drag the card to the right
             } else if transV.x > 0 {
                 println("like")
-                var likeState = SelectionState.LikeSelection
+                var currentState = SelectionState.LikeSelection
                 performSegueWithIdentifier("likeSegue", sender: self)
-                print(likeState.hashValue)
+                print(currentState.hashValue)
              // if no one touch the card
             } else {
             println("card stays at the center")
