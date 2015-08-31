@@ -48,16 +48,23 @@ class RootPresentationViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    /*
+    return back to previous view controller
+    */
+    @IBAction func unwindToPreviousCotnroller(segue:UIStoryboardSegue) {
+        self.horizontalContraint.constant = 0
+        print("return back")
+    }
 
     @IBAction func handlePan(sender: UIPanGestureRecognizer) {
         
         switch sender.state {
             
         case UIGestureRecognizerState.Began:
-            println("began")
-          
+            println("Began")
+        
         case UIGestureRecognizerState.Ended:
-            //println("eND")
+            println("End")
             //add an animation to the .Ended call block which animates the view back to a  centred position once the dragging event ends
             UIView.animateWithDuration(0.3, animations: { () -> Void in
                 
@@ -69,7 +76,6 @@ class RootPresentationViewController: UIViewController {
                 
             })
             
-    
         case UIGestureRecognizerState.Changed:
             let translation = sender.translationInView(self.cardContainer)
             horizontalContraint.constant =  -translation.x
@@ -80,22 +86,23 @@ class RootPresentationViewController: UIViewController {
             print("Card locates at \(transV)")
             // If user drag the card to the left
             if transV.x < 0{
-            println("dislike")
-            currentState = SelectionState.DislikeSelection
-            print(currentState.hashValue)
+                println("dislike")
+                var dislikeState = SelectionState.DislikeSelection
+                performSegueWithIdentifier("dislikeSegue", sender: self)
+                print(dislikeState.hashValue)
               
             // If user drag the card to the right
             } else if transV.x > 0 {
-             println("like")
-            currentState = SelectionState.LikeSelection
-            print(currentState.hashValue)
-             // if no one touch the card 
+                println("like")
+                var likeState = SelectionState.LikeSelection
+                performSegueWithIdentifier("likeSegue", sender: self)
+                print(likeState.hashValue)
+             // if no one touch the card
             } else {
             println("card stays at the center")
                 
             }
-            
-            print(currentState.hashValue)
+           // print(currentState.hashValue)
             
         case UIGestureRecognizerState.Failed:
             println("OPPS ERROR")

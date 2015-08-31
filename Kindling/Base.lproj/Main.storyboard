@@ -43,6 +43,8 @@
                         <outlet property="cardContainer" destination="sKW-GI-mES" id="dnu-qi-xs9"/>
                         <outlet property="cardTopLayoutConstraint" destination="SfV-a4-iIT" id="W2p-cd-P6W"/>
                         <outlet property="horizontalContraint" destination="OwK-iy-Ao8" id="v3H-8T-blA"/>
+                        <segue destination="QrE-Mw-MpA" kind="show" identifier="dislikeSegue" id="IAn-ar-YGm"/>
+                        <segue destination="tHM-pS-njH" kind="show" identifier="likeSegue" id="RNw-DQ-VZA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -53,6 +55,82 @@
                 </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1255" y="281"/>
+        </scene>
+        <!--DislikeVC-->
+        <scene sceneID="FlR-yQ-O7c">
+            <objects>
+                <viewController id="QrE-Mw-MpA" customClass="DislikeVC" customModule="Kindling" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G1E-Pm-9tm"/>
+                        <viewControllerLayoutGuide type="bottom" id="wl3-y0-Cwt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ugK-os-xQe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUN-Jy-axA">
+                                <rect key="frame" x="265.5" y="285" width="69" height="30"/>
+                                <state key="normal" title="GO BACK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="returnSegue:" destination="QrE-Mw-MpA" eventType="touchUpInside" id="OEB-hz-W6f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078437569999997" green="0.61960786580000005" blue="0.15686275059999999" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="TUN-Jy-axA" firstAttribute="centerY" secondItem="ugK-os-xQe" secondAttribute="centerY" id="9da-bF-Tjw"/>
+                            <constraint firstItem="TUN-Jy-axA" firstAttribute="centerX" secondItem="ugK-os-xQe" secondAttribute="centerX" id="Dtw-yr-Dp0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="DIB-BB-Txn" kind="unwind" identifier="unwind" unwindAction="unwindToPreviousCotnroller:" id="zg7-UH-RJY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQP-zc-B5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="DIB-BB-Txn" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="583" y="281"/>
+        </scene>
+        <!--LikeVC-->
+        <scene sceneID="Eo7-ss-qI2">
+            <objects>
+                <viewController id="tHM-pS-njH" customClass="LikeVC" customModule="Kindling" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GwA-MQ-I72"/>
+                        <viewControllerLayoutGuide type="bottom" id="x35-9C-ay1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="39y-DK-6QR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMI-1u-38q">
+                                <rect key="frame" x="294" y="285" width="74" height="30"/>
+                                <state key="normal" title="GO BACK ">
+                                    <color key="titleColor" red="0.97616745670000005" green="0.95806183690000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gobacktoMainVC:" destination="tHM-pS-njH" eventType="touchUpInside" id="Nub-xY-EsQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="eMI-1u-38q" secondAttribute="centerY" id="Ozp-1C-UBN"/>
+                            <constraint firstAttribute="centerX" secondItem="eMI-1u-38q" secondAttribute="centerX" constant="-31" id="u4H-o5-CEl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="2MG-Tr-Ay6" kind="unwind" identifier="unwind" unwindAction="unwindToPreviousCotnroller:" id="sU1-2j-N82"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1b7-90-26b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2MG-Tr-Ay6" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1974" y="281"/>
         </scene>
         <!--Card View Controller-->
         <scene sceneID="AUH-K5-Yem">
@@ -123,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9l1-gO-mfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="285" y="940"/>
+            <point key="canvasLocation" x="1255" y="826"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OLU-Nx-RFa">
@@ -141,7 +219,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e09-dl-EuF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1084" y="-444"/>
+            <point key="canvasLocation" x="1255" y="-432"/>
         </scene>
     </scenes>
     <resources>

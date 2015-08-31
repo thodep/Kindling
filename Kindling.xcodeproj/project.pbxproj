@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D158C2D41B90F3ED00A586EB /* dislikeCustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D158C2D31B90F3ED00A586EB /* dislikeCustomSegue.swift */; };
 		D15AEB901B8B9A16005C7A0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AEB8F1B8B9A16005C7A0E /* AppDelegate.swift */; };
 		D15AEB951B8B9A16005C7A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15AEB931B8B9A16005C7A0E /* Main.storyboard */; };
 		D15AEB971B8B9A16005C7A0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D15AEB961B8B9A16005C7A0E /* Images.xcassets */; };
@@ -15,6 +16,8 @@
 		D15AEBB11B8B9BB2005C7A0E /* RootPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AEBB01B8B9BB2005C7A0E /* RootPresentationViewController.swift */; };
 		D15AEBB31B8BA000005C7A0E /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AEBB21B8BA000005C7A0E /* CardViewController.swift */; };
 		D15AEBB71B8BA7A8005C7A0E /* LayerOfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AEBB61B8BA7A8005C7A0E /* LayerOfView.swift */; };
+		D19105DA1B90E36B007CF814 /* LikeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19105D91B90E36B007CF814 /* LikeVC.swift */; };
+		D19105DC1B90E37C007CF814 /* DislikeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19105DB1B90E37C007CF814 /* DislikeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D158C2D31B90F3ED00A586EB /* dislikeCustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dislikeCustomSegue.swift; sourceTree = "<group>"; };
 		D15AEB8A1B8B9A16005C7A0E /* Kindling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kindling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15AEB8E1B8B9A16005C7A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D15AEB8F1B8B9A16005C7A0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		D15AEBB01B8B9BB2005C7A0E /* RootPresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPresentationViewController.swift; sourceTree = "<group>"; };
 		D15AEBB21B8BA000005C7A0E /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		D15AEBB61B8BA7A8005C7A0E /* LayerOfView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerOfView.swift; sourceTree = "<group>"; };
+		D19105D91B90E36B007CF814 /* LikeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeVC.swift; sourceTree = "<group>"; };
+		D19105DB1B90E37C007CF814 /* DislikeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DislikeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,9 @@
 				D15AEBB01B8B9BB2005C7A0E /* RootPresentationViewController.swift */,
 				D15AEBB21B8BA000005C7A0E /* CardViewController.swift */,
 				D15AEBB61B8BA7A8005C7A0E /* LayerOfView.swift */,
+				D19105D91B90E36B007CF814 /* LikeVC.swift */,
+				D19105DB1B90E37C007CF814 /* DislikeVC.swift */,
+				D158C2D31B90F3ED00A586EB /* dislikeCustomSegue.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -228,6 +237,9 @@
 			files = (
 				D15AEBB11B8B9BB2005C7A0E /* RootPresentationViewController.swift in Sources */,
 				D15AEBB71B8BA7A8005C7A0E /* LayerOfView.swift in Sources */,
+				D158C2D41B90F3ED00A586EB /* dislikeCustomSegue.swift in Sources */,
+				D19105DC1B90E37C007CF814 /* DislikeVC.swift in Sources */,
+				D19105DA1B90E36B007CF814 /* LikeVC.swift in Sources */,
 				D15AEB901B8B9A16005C7A0E /* AppDelegate.swift in Sources */,
 				D15AEBB31B8BA000005C7A0E /* CardViewController.swift in Sources */,
 			);
